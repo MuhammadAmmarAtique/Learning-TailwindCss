@@ -8,39 +8,39 @@
      <!-- Tailwind css  -->
     <!-- We are using script tag but this tag will get and put all the css inside head tag of this html page, We can see that by inspecting our web page. -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
-        tailwind.config = {
-          theme: {
-
-        
-            screens: {
-                'xs': '200px',
-
-
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'ammar': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+  
+            }
           }
         }
-      </script>
-
-</head>
+      }
+    </script>
+   
+ </head>
 <body>
-    <h1 class="text-5xl xs:text-right sm:text-center md:text-left lg:text-right ">Hello world!</h1>
+    <!-- <h1 class="text-5xl xs:text-right sm:text-center md:text-left lg:text-right ">Hello world!</h1> -->
+
+    <!-- 1)CSS Container -->
+
+    <div class="container mx-auto text-center text-5xl text-[#980221]">
+      Hello world
+    </div>
      
+    
     
     
 
